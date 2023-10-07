@@ -1,0 +1,17 @@
+import mcwiki
+import discord
+from discord.ext import commands
+
+intents = discord.Intents.default()
+intents.members = True
+intents.message_content = True
+###
+bot = commands.Bot(intents = intents, command_prefix=".")
+###
+
+@bot.event
+async def on_ready():
+    print(f'Got in as {bot.user}')
+    
+@bot.event
+async def on_message(message):
