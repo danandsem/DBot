@@ -36,4 +36,4 @@ async def meme(ctx):
 async def test(ctx):
     await ctx.send("Command test complete.")
 
-bot.run("MTE1MjkwNTA1NTgxMzUxMzI3OA.Gs9xYe.eYjM5wEOivofgUbayA1S8CImp9_pWBUYZAV8qA")
+bot.run(os.getenv("BOT_TOKEN"))
